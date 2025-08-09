@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather Wear</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Three.js (required by Vanta) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+
+  <!-- Vanta Fog script -->
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+
+  <!-- Your external JS will initialize Vanta Fog and your app -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Vanta background container -->
+  <div
+    id="vanta-bg"
+    style="
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh; /* fixed height for better perf */
+      z-index: -1;
+      pointer-events: none;
+      will-change: transform;
+    "
+  ></div>
+
+  <div class="all">
+    <div class="clouds">
+      <div class="header" style="font-family: 'Poppins', sans-serif" id="header">
+        <span>Weather Wear</span>
+      </div>
+
+      <div class="content" id="content">
+        <p>Search by City:</p>
+        <input type="text" placeholder="City Name" style="text-align: center" id="city" />
+        <button class="check" onclick="getWeather()" id="but">Check</button>
+
+        <p style="position: relative; top: 7px">Or</p>
+
+        <button onclick="getlocation()" id="but">Use current location 𖦏</button>
+      </div>
+    </div>
+
+    <div class="clothes">
+      <p class="recc" id="recc"></p>
+    </div>
+  </div>
+</body>
+
+</html>

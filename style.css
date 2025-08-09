@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    
+    margin: 0;
+   
+    min-height: 100vh;
+
+}
+#vanta-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 300px; /* smaller height */
+  z-index: -1;
+  will-change: transform;
+}
+
+.header {
+    
+    
+    text-align: center;
+    margin: auto;
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: black;
+    padding: 60px;
+    
+}
+
+.content {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 30px;
+    font-size: 45px;
+    
+    position: relative;
+    top: -60px;
+}
+
+.check {
+    padding: 10px;
+    position: relative;
+    top: 35px;
+    border-radius: 10px;
+    
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    transition: 350ms;
+    font-size: 30px;
+    box-shadow: 1px 1px 5px black;
+
+}
+
+button:hover {
+    color: aliceblue;
+    background-color: darkgray;
+    box-shadow: 0px 0px 0px 0px;
+    transform: scale(1.05);
+    box-shadow: 1px 1px 5px black;
+}
+
+input {
+   
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 30px;
+
+}
+
+.location {
+    margin: auto;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.recc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    font-size: 35px;
+    
+    
+}
+
+
+@media(max-width:1500px) {
+    .header {
+        text-align: center;
+        margin: auto;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: 30px;
+        font-size: 25px;
+        width: 60vw;
+        color: black;
+        text-shadow: none;
+    }
+
+    button {
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        
+        transition: 350ms;
+        font-size: 18px;
+    }
+
+    button:hover {
+        color: aliceblue;
+        background-color: darkgray;
+        box-shadow: 0px 0px 0px 0px;
+        transform: scale(1.05);
+    }
+
+    input {
+        width: 50vw;
+        max-width: 350px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 2px solid black;
+        font-size: 20px;
+
+    }
+
+    .check {
+        padding: 5px;
+        position: relative;
+        top: 20px;
+    }
+
+    .location {
+        margin: auto;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .recc {
+        position: relative;
+        text-align: center;
+        top: -50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: 20px;
+        font-size: 20px;
+        
+        
+    }
+
+}
+
+@media(max-width:400px) {
+    .header {
+        text-align: center;
+        margin: auto;
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: 30px;
+        font-size: 25px;
+        width: 60vw;
+    }
+
+    button {
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        
+        transition: 350ms;
+        font-size: 18px;
+    }
+
+    button:hover {
+        color: aliceblue;
+        background-color: darkgray;
+        box-shadow: 0px 0px 0px 0px;
+        transform: scale(1.05);
+    }
+
+    input {
+        padding: 5px;
+        border-radius: 5px;
+        border: 2px solid black;
+        font-size: 20px;
+
+    }
+
+    .check {
+        padding: 5px;
+        position: relative;
+        top: 20px;
+    }
+
+    .location {
+        margin: auto;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .recc {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: 15px;
+        font-size: 15px;
+        color: rgb(9, 9, 9);
+       
+    }
+
+}
